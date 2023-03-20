@@ -9,6 +9,7 @@ const elementsCategFist = document.querySelector('.item ul');
 const ElementsFist = elementsCategFist.children;
 console.log('Elements:', ElementsFist.length);
 
+
 const elementsCategSecond = document.querySelectorAll("#categories h2")[1];
 console.log('Category: ', elementsCategSecond.textContent)
 const elementSecond = elementsCategSecond.nextElementSibling.children;
@@ -18,3 +19,4 @@ const elementsCategLast = document.querySelectorAll("#categories h2")[2];
 console.log('Category: ', elementsCategLast.textContent);
 const childLastEl = elementsCategLast.nextElementSibling.children;
 console.log('Elements:',childLastEl.length)
+// console.log(elementsCategFist)
