@@ -10,13 +10,14 @@ function onFormSubmit(event) {
     const mail = formElement.email.value;
     const password = formElement.password.value;
     if (!mail || !password) {
+        
         alert('Всі поля мають бути заповнені');
+        return
     }
 
 
-    formData.forEach((value, name) => {
-        console.log('value=', value);
-        console.log('name=',name);
-    })
+    console.log('name=', mail, 'value=',password);
+        
+    
     const newformcl=form.reset();
 }

@@ -5,13 +5,10 @@ const refs = {
 };
 
 refs.input.addEventListener('blur', () => {
-    if (refs.input.value.length <= refs.data.dataset.length) {
-        console.log('valid');
-       
-      refs.inputId.classList.add('valid')
+    if (refs.input.value.length ===Number(refs.data.dataset.length)) {
+        refs.inputId.classList.add('valid')
     }
     else {
-        console.log('invalid');
-       refs.inputId.classList.add('invalid')
+        refs.inputId.classList.add('invalid')
     }
 });
