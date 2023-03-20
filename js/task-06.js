@@ -6,9 +6,11 @@ const refs = {
 
 refs.input.addEventListener('blur', () => {
     if (refs.input.value.length ===Number(refs.data.dataset.length)) {
-        refs.inputId.classList.add('valid')
+        refs.inputId.classList.add('valid');
+         refs.inputId.classList.remove('invalid')
     }
     else {
-        refs.inputId.classList.add('invalid')
+        refs.inputId.classList.add('invalid');
+         refs.inputId.classList.remove('valid')
     }
 });

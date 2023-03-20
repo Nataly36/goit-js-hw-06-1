@@ -4,7 +4,7 @@ form.addEventListener('submit', onFormSubmit);
 
 function onFormSubmit(event) {
     event.preventDefault();
-    const formData = new FormData(event.currentTarget);
+    
 
     const formElement = event.currentTarget.elements;
     const mail = formElement.email.value;
@@ -16,8 +16,8 @@ function onFormSubmit(event) {
     }
 
 
-    console.log('name=', mail, 'value=',password);
+    console.log( mail, password);
         
     
-    const newformcl=form.reset();
+    form.reset();
 }
